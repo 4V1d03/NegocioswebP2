@@ -1,3 +1,4 @@
+-- Active: 1729610458113@@127.0.0.1@3307@ecommercee
 CREATE TABLE carros(  
     codigo int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
     modelo VARCHAR(128),

@@ -16,11 +16,10 @@ class CarrosList extends PublicController{
             "DSP" => "Disponible",
             "RSV" => "Reservado",
             "SLD" => "Vendido",
-            "MB" => "Muy Buneno"
         ];
         
         foreach ($carrosDao as $carro) {
-            $carro["estadoDsc"] = $estadosDscArr[$carro["estado"]];
+            $carro["estadoDsc"/*llave de la lista en la vista*/] = $estadosDscArr[$carro["estado"/*Nombre de la columna en la DB*/]];
             $viewCarros[] = $carro;
         }
 
